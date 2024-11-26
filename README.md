@@ -41,7 +41,6 @@ Reference documentation: https://developer.shopware.com/docs/guides/installation
 In order to install shopware inside container exec this commands inside containers.:
 - composer create-project shopware/production
 - composer require --dev shopware/dev-tools
-- bin/console system:install --basic-setup
 - mv ./production/{.,}* ./
 - bin/console system:install --basic-setup
 

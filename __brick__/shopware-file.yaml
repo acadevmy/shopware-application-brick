@@ -1,0 +1,12 @@
+shopware:
+  filesystem:
+    public:
+      url: "https://%env(BUCKET)%.fra1.digitaloceanspaces.com"
+      type: "amazon-s3"
+      config:
+        bucket: '%env(BUCKET)%'
+        region: '%env(BUCKET_REGION)%'
+        endpoint: '%env(BUCKET_ENDPOINT)%'
+        credentials:
+          key: '%env(BUCKET_KEY)%'
+          secret: '%env(BUCKET_SECRET)%'
